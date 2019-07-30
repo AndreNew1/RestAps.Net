@@ -1,0 +1,7 @@
+{
+  "Evolve.Driver": "MySQL.Data",
+  "Evolve.ConnctionString": "Server=localhost;DataBase=Calculadora;Uid=root;Pwd=devs4jobs;",
+  "Evolve.Locations": "Db",
+  "Evolve.Command": "migrate",
+  "Evolve.Placeholder.table4": "table_4"
+}

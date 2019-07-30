@@ -6,8 +6,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Evolve.Json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Evolve" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="3.1.4" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="MySql.Data" Version="8.0.17" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Db\dataset\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Evolve.Json" />
   </ItemGroup>
 
 </Project>
