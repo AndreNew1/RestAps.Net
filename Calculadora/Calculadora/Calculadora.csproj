@@ -24,5 +24,12 @@
   <ItemGroup>
     <None Include="Evolve.Json" />
   </ItemGroup>
+  <Target Name="ChangeAliasesOfStringNameAssemblies" BeforeTargets="FindReferenceAssembliesForReferences;ResolveReferences">
+    <ItemGroup>
+      <ReferencePath Condition="'%{FileName)'== 'MySqlConnector'">
+        <Aliases>MySqlConnectorAlias</Aliases>
+      </ReferencePath>
+    </ItemGroup>
+  </Target>
 
 </Project>
