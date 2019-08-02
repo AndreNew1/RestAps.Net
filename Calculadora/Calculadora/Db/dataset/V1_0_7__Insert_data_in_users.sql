@@ -1,0 +1,1 @@
+﻿INSERT INTO users(Login,AccessKey) VALUES('leandro','admin123'),('falvio','user123');

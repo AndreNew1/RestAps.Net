@@ -1,16 +1,25 @@
-﻿using System;
+﻿using Calculadora.Model.Base;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Calculadora.Model
 {
-    public class Person
+    [Table("persons")]
+    public class Person : BaseEntity
     {
-        public long? Id { get; set; }
+        [Column("FirstName")]
         public string FirstName { get; set; }
+
+        [Column("LastName")]
         public string LastName { get; set; }
+
+        [Column("Address")]
         public string Address { get; set; }
+
+        [Column("Gender")]
         public string Gender { get; set; }
     }
 }

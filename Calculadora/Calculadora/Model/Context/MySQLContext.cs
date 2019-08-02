@@ -1,8 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Calculadora.Model.Context
 {
@@ -14,6 +10,8 @@ namespace Calculadora.Model.Context
         }
         public MySQLContext(DbContextOptions<MySQLContext> options) : base(options) { }
 
-        public DbSet<Person> persons { get; set; }
+        public DbSet<Person> Persons { get; set; }
+        public DbSet<Book> Books { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
